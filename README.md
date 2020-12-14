@@ -27,8 +27,9 @@ of services with its own endpoints).
 Here are the instruction of how to test it on your local system (I use Windows 10 here, so it will be slightly different if
 your system is Linux or Mac)
 
-1. create two database tables (change the schema from demo to your schema if you like), I create it for
-   MySQL, but it is fairly easy to use other database without too much modification (RDBMS)
+1. Two database tables will be created automatically with Spring JPA (change the schema from demo to your schema if you like)
+
+   This is just a reference, you do not have to create those tables manually, make sure the database connection string is correct, plus change the user name / password accordingly.
    
    CREATE TABLE `enrollee` (
    `id` int NOT NULL AUTO_INCREMENT,
