@@ -1,0 +1,340 @@
+{
+	"info": {
+		"_postman_id": "a85c2013-9aee-4496-9c90-8be93a786b98",
+		"name": "Enrollee/Dependent Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST Enrollee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 6,\r\n    \"name\": \"Jenny\",\r\n    \"activationStatus\": \"true\",\r\n    \"dob\": \"08/18/1995\",\r\n    \"dependentgroupid\": 501\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/V1/enrollees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"V1",
+						"enrollees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Enrollee By ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Robert\",\r\n    \"activationStatus\": true,\r\n    \"dob\": \"11/21/1982\",\r\n    \"phoneNum\": \"3894590784\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/V1/enrollee/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"V1",
+						"enrollee",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Dependent By ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Jose\",\r\n    \"dob\": \"11/21/2009\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/V1/dependent/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"V1",
+						"dependent",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Enrollee By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/V1/enrollee/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"V1",
+						"enrollee",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Dependent By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/V1/dependent/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"V1",
+						"dependent",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all enrollees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/V1/enrollees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"V1",
+						"enrollees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all dependents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/V1/dependents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"V1",
+						"dependents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET list of dependents to one enrollee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/V1/enrollee/5/dependents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"V1",
+						"enrollee",
+						"5",
+						"dependents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Enrollee By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/V1/enrollee/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"V1",
+						"enrollee",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Dependent By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/V1/dependent/18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"V1",
+						"dependent",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE list of dependents for one enrollee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/V1/enrollee/5/dependents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"V1",
+						"enrollee",
+						"5",
+						"dependents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Dependent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 19,\r\n    \"name\": \"Morris\",\r\n    \"dob\": \"12/25/2002\",\r\n    \"groupid\": \"401\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/V1/dependent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"V1",
+						"dependent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST list of dependent to one enrollee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n{\r\n    \"id\": 20,\r\n    \"name\": \"Feay\",\r\n    \"dob\": \"02/12/2011\"\r\n},\r\n{\r\n    \"id\": 21,\r\n    \"name\": \"Peter\",\r\n    \"dob\": \"05/09/2006\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/V1/enrollee/5/dependents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"V1",
+						"enrollee",
+						"5",
+						"dependents"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
