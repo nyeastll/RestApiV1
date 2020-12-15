@@ -155,3 +155,15 @@ Note:
 This project only choose the easy to implement resttemplate for cross service call, and it can be implemented using 
 webclient, which is reactive approach, and it will be thread-safe, it will fit better for asynchronous, non-blocking, 
 using Flux/Mono, and RestTemplate is fit better for synchronous and blocking rest call.
+
+Future enhancement:
+
+Due to time constraint, and I spend some extra time to create another more complex microservice solution, I did miss some of the important features for this project, it will be added in the future, includes:
+
+1. Swagger2 documentation 
+2. JUnit test 
+3. Mockito test
+4. More error handling (I have very basic error handling in current code, but need to be extended)
+5. Controller Advisor (it will be nice to have)
+
+Again, this is a barebone RestAPI project, just for demonstration purpose.
