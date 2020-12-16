@@ -9,7 +9,7 @@ import java.util.Date;
 @Table(name="enrollee")
 public class Enrollee {
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    //@GeneratedValue(strategy=GenerationType.IDENTITY)     // remove this restriction
     private int id;
     @NotBlank
     @Column(nullable = false)
