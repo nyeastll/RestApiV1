@@ -167,3 +167,17 @@ Due to time constraint, and I spend some extra time to create another more compl
 5. Controller Advisor (it will be nice to have)
 
 Again, this is a barebone RestAPI project, just for demonstration purpose.
+
+Latest update:
+
+All the enhancement has been done, due to time constraint, I did not create the complete unit test, but it covers the enrollee API test, if I have time, I will finish the rest of the unit test case.
+
+1. Swagger2 documentation 
+2. JUnit test 
+3. Mockito test
+4. More error handling (I have very basic error handling in current code, but need to be extended)
+5. Controller Advisor (it will be nice to have)
+
+Just one more notes, in previous database design, the Id was the primary key for Enrollee table, and it will be auto increasemental, during unit test, I realize this is a unnecessary restriction, I comment out this restriction.
+
+All the JUnit test case (six test case) was passed, and more test case will be added in the future.
